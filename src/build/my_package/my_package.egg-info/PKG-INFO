@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my_package
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: qureeb
+Maintainer-email: quareebs@yahoo.com
+License: Apache-2.0
+License-File: LICENSE
+Requires-Dist: setuptools

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot name="my_robota">
+
+    <material name="orange">
+        <color rgba="0.9 0.6 0.2 1"/>
+    </material>
+
+    <link name="arm_base">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.3" />
+            </geometry>
+        </visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <material name="orange" />
+    </link>
+
+    <link name="forearm">
+        <visual>
+            <geometry>
+                <cylinder radius="0.02" length="0.3"/>
+            </geometry>
+        </visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <material name="yallow" />
+    </link>
+
+    <joint name="base_forearm_joint" type="fixed">
+        <parent link="arm_base" />
+        <child link="forearm" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+</robot>
